@@ -6,30 +6,21 @@
 </head>
 <body>
 <div id="main">
-<div id="header"><h1>Which Desert Will Help Survive Qurantine</h1></div>
+<div id="header"><h1>Quarantine Desert Surival Guide</h1></div>
 
 <form  id="form1">
 <p>What type of desert would you prefer?</p>
 <label><input type="radio" name="category" id="cookie" value="1" />Cookies</label>
 <label><input type="radio" name="category" id="wrong" value="0" />Cake</label>
 <label><input type="radio" name="category" id="wrong" value="0" />Ice Cream</label>
-
-<p>What would you prefer to do?</p>
-<label><input type="radio" name="activity" id="party" value="1" />Party</label>
-<label><input type="radio" name="activity" id="rock" value="2" />Rock out</label>
-<label><input type="radio"  name="activity" id="beer" value="3" />Drink beer</label>
-
-<p>What's your favorite style of music?</p>
-<label><input type="radio" name="genre" id="rock2" value="1" />Rock</label>
-<label><input type="radio" name="genre" id="indie" value="2" />Indie</label>
-<label><input type="radio" name="genre" id="country" value="3" />Country</label>
-
+<label><input type="radio" name="category" id="wrong" value="0" />None</label>
 
 <button type="submit" value="Submit">Submit</button>
 
 </form>
 
 <p id="answer"></p>
+
 <p id="answer2"></p>
 </div>
 
@@ -49,11 +40,22 @@
 	   //total= category + activity + genre;
 	   
        if (category==1){
-        document.getElementById("answer2").innerHTML = "What is wrong with you?";
+        document.getElementById("answer").innerHTML = "You're in Luck";
+       }
+
+       if (category==2){
+        document.getElementById("answer").innerHTML = "What is wrong with you?";
+       }
+
+       if (category==3){
+        document.getElementById("answer").innerHTML = "Good luck with that.";
+       }
+
+       if (category==4){
+        document.getElementById("answer").innerHTML = "Doesn't that Peloton commerial feel like a lifetime ago?";
        }
 	  
-	   document.getElementById("answer").innerHTML = 5;	   
-
+	   
 	   /*if(total < 4) {
 document.getElementById("answer2").innerHTML = "You got Quiet Company.";
 }
