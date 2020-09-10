@@ -11,9 +11,9 @@
 <form  id="form1">
 <p>What type of desert would you prefer?</p>
 <label><input type="radio" name="category" id="cookie" value="1" />Cookies</label>
-<label><input type="radio" name="category" id="wrong" value="2" />Cake</label>
-<label><input type="radio" name="category" id="wrong" value="3" />Ice Cream</label>
-<label><input type="radio" name="category" id="wrong" value="4" />None</label>
+<label><input type="radio" name="category" id="cake" value="2" />Cake</label>
+<label><input type="radio" name="category" id="icecream" value="3" />Ice Cream</label>
+<label><input type="radio" name="category" id="none" value="4" />None</label>
 
 <button type="submit" value="Submit">Submit</button>
 
@@ -21,7 +21,7 @@
 
 <p id="answer"></p>
 
-<p id="answer2"></p>
+
 </div>
 
 <!-- <img src = "https://drive.google.com/file/d/1j-oOD5mJEQe0Q8KuTA0j5jjZhkHQEIEW/uc?usp=sharing"> -->
@@ -33,26 +33,26 @@
 	   
 	   category = parseInt(document.querySelector('input[name = "category"]:checked').value);  
 	  
-	  activity = parseInt(document.querySelector('input[name = "activity"]:checked').value);
+	  //activity = parseInt(document.querySelector('input[name = "activity"]:checked').value);
 	   
-	  genre = parseInt(document.querySelector('input[name = "genre"]:checked').value);
+	  //genre = parseInt(document.querySelector('input[name = "genre"]:checked').value);
 	   
 	   //total= category + activity + genre;
 	   
        if (category==1){
-        document.getElementById("answer").innerHTML = "You're in Luck";
+        document.getElementById("cookie").innerHTML = "You're in Luck";
        }
 
        if (category==2){
-        document.getElementById("answer").innerHTML = "What is wrong with you?";
+        document.getElementById("cake").innerHTML = "What is wrong with you?";
        }
 
        if (category==3){
-        document.getElementById("answer").innerHTML = "Good luck with that.";
+        document.getElementById("icecream").innerHTML = "Good luck with that.";
        }
 
        if (category==4){
-        document.getElementById("answer").innerHTML = "Doesn't that Peloton commerial feel like a lifetime ago?";
+        document.getElementById("none").innerHTML = "Doesn't that Peloton commerial feel like a lifetime ago?";
        }
 	  
 	   
