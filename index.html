@@ -21,24 +21,13 @@
 </form>
 
 <p id="answer"></p>
-
-
 </div>
-
-<!-- <img src = "https://drive.google.com/file/d/1j-oOD5mJEQe0Q8KuTA0j5jjZhkHQEIEW/uc?usp=sharing"> -->
-<!-- <img src = "https://beinhart-qcc.s3.amazonaws.com/cookies/E9E5D4C6-21F2-46D5-84EC-D75C82B7EFC1_1_201_a.jpeg"> -->
-
 <script>
 	   document.getElementById("form1").onsubmit=function() {
 	   
 	   
 	   category = parseInt(document.querySelector('input[name = "category"]:checked').value);  
 	  
-	  //activity = parseInt(document.querySelector('input[name = "activity"]:checked').value);
-	   
-	  //genre = parseInt(document.querySelector('input[name = "genre"]:checked').value);
-	   
-	   //total= category + activity + genre;
 	   
        if (category==1){
         document.getElementById("answer").innerHTML = "You're in Luck";
@@ -56,20 +45,6 @@
         document.getElementById("answer").innerHTML = "Doesn't that Peloton commercial feel like a lifetime ago?";
        }
 	  
-	   
-	   /*if(total < 4) {
-document.getElementById("answer2").innerHTML = "You got Quiet Company.";
-}
-
-   if(total >=4 && total < 7) {
-document.getElementById("answer2").innerHTML = "You got Spoon.";
-}
-	
-	if(total >=7) {
-document.getElementById("answer2").innerHTML = "You got Willie Nelson.";
-}   
-*/
-	   
 	   return false; // required to not refresh the page; just leave this here
 	   }// end the submit function
 </script>
